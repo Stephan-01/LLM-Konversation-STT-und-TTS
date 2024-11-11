@@ -25,7 +25,6 @@ Ensure you have the following Python libraries installed:
 
 You can install the required libraries with `pip`:
 
-```bash
 pip install speechrecognition openai transformers elevenlabs playsound
 
 ## API Keys
@@ -44,7 +43,7 @@ You can set the environment variables for the API keys in your terminal session:
 ```bash
 export OPENAI_API_KEY="your-openai-api-key"
 export ELEVENLABS_API_KEY="your-elevenlabs-api-key"
-
+```
 ## Usage
 
 1. **Ensure that the API keys for OpenAI and ElevenLabs are correctly set.**
@@ -59,7 +58,7 @@ export ELEVENLABS_API_KEY="your-elevenlabs-api-key"
 
 ```bash
 python your_script.py
-
+```
 ## Program Flow
 
 - The program will wait for you to speak into the microphone.
