@@ -91,6 +91,7 @@ Now you can speak...
 You said: How are you?
 Response from ChatGPT: I'm doing well, thank you for asking!
 Audio file successfully created: response.mp3
+```
 
 The response will then be read aloud, depending on the chosen TTS model.
 
