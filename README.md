@@ -2,7 +2,7 @@
 
 This project enables voice-controlled conversations with a Large Language Model (LLM) such as OpenAI's GPT. Spoken language is converted into text, which is then sent to the LLM, and the LLM's response is read aloud using two different Text-to-Speech (TTS) models. There are two modes:
 
-- **Local TTS Model** (facebook/mms-tts): An open-source model that runs locally on your computer.
+- **Local TTS Model** (facebook/mms-tts-eng): An open-source model that runs locally on your computer.
 - **ElevenLabs TTS Model**: A cloud-based advanced TTS model provided by the ElevenLabs API.
 
 The project provides the flexibility to use either the local model or the cloud-based solution, depending on your requirements and preferences.
@@ -19,7 +19,7 @@ Ensure you have the following Python libraries installed:
 
 - `speech_recognition` (for speech recognition)
 - `openai` (for communication with OpenAI's GPT)
-- `transformers` (for the local TTS model facebook/mms-tts)
+- `transformers` (for the local TTS model facebook/mms-tts-eng)
 - `elevenlabs` (for speech synthesis with ElevenLabs)
 - `playsound` (for playing the generated audio files)
 
@@ -49,7 +49,7 @@ export ELEVENLABS_API_KEY="your-elevenlabs-api-key"
 1. **Ensure that the API keys for OpenAI and ElevenLabs are correctly set.**
 
 2. **Choose the desired TTS mode:**
-   - **Local TTS Model**: Uses `facebook/mms-tts` from the `transformers` library. The response from GPT is generated locally on your computer.
+   - **Local TTS Model**: Uses `facebook/mms-tts-eng` from the `transformers` library. The response from GPT is generated locally on your computer.
    - **ElevenLabs TTS Model**: Uses the ElevenLabs API to generate a more advanced speech output.
 
    You can switch between TTS modes by modifying the code. By default, the local model is used.
@@ -71,12 +71,12 @@ python your_script.py
 1. **Speech Recognition**: When you speak, your speech is converted into text using the Google Speech API (via `speech_recognition`).
 2. **GPT Interaction**: The text is sent to the OpenAI API, which generates a response.
 3. **Text-to-Speech (TTS)**: The response is converted into an audio file and played using either:
-   - The local `facebook/mms-tts` model, or
+   - The local `facebook/mms-tts-eng` model, or
    - The ElevenLabs API, depending on the chosen TTS mode.
 
 ### Local TTS Model (`facebook/mms-tts`)
 
-The local model `facebook/mms-tts` uses the `transformers` library and runs on your local machine. It provides a simple and fast way to convert text into speech, but with less advanced voices compared to cloud-based solutions.
+The local model `facebook/mms-tts-eng` uses the `transformers` library and runs on your local machine. It provides a simple and fast way to convert text into speech, but with less advanced voices compared to cloud-based solutions.
 
 ### Cloud-based TTS Model (ElevenLabs)
 
