@@ -74,7 +74,7 @@ python your_script.py
    - The local `facebook/mms-tts-eng` model, or
    - The ElevenLabs API, depending on the chosen TTS mode.
 
-### Local TTS Model (`facebook/mms-tts`)
+### Local TTS Model (`facebook/mms-tts-eng`)
 
 The local model `facebook/mms-tts-eng` uses the `transformers` library and runs on your local machine. It provides a simple and fast way to convert text into speech, but with less advanced voices compared to cloud-based solutions.
 
