@@ -89,7 +89,7 @@ After you speak, the output in the terminal might look like this:
 ```bash
 Now you can speak...
 You said: How are you?
-Response from ChatGPT: I'm doing well, thank you for asking!
+Response from ChatGPT: I am doing well, thank you for asking!
 Audio file successfully created: response.mp3
 ```
 
